@@ -1,0 +1,132 @@
+scala> object Solution {
+
+You typed two blank lines.  Starting a new command.
+
+scala>     def pascalTriangle(levels:Int):Unit={
+     | 
+     |         
+     | 
+     |         def factorial(n:Int):Int = {
+     | 
+     |             n match {
+     | 
+     |                 case 1 => 1
+     | 
+     |                 case k => k * factorial(k-1)
+     | 
+     |             }
+     | 
+     |         }
+     | 
+     | 
+You typed two blank lines.  Starting a new command.
+
+scala>         // The value at nthrow and rth column of the triangle is equal to n! / (r! * (n-r)!)
+
+scala>         for (row <- 1 to levels)
+     | 
+     |             for (col <- 1 to row)
+     | 
+     |                 println(factorial(row)/(factorial(col)*factorial(row-col)))
+<console>:11: error: not found: value levels
+               for (row <- 1 to levels)
+                                ^
+<console>:15: error: not found: value factorial
+                       println(factorial(row)/(factorial(col)*factorial(row-col)))
+                               ^
+<console>:15: error: not found: value factorial
+                       println(factorial(row)/(factorial(col)*factorial(row-col)))
+                                               ^
+<console>:15: error: not found: value factorial
+                       println(factorial(row)/(factorial(col)*factorial(row-col)))
+                                                              ^
+
+scala>             println("\n")
+
+
+
+scala>     }
+<console>:1: error: eof expected but '}' found.
+    }
+    ^
+
+scala>     def main(args: Array[String]) {
+     | 
+     |         pascalTriangle(5)
+     | 
+     |     }
+<console>:12: error: not found: value pascalTriangle
+               pascalTriangle(5)
+               ^
+
+scala> }
+<console>:1: error: eof expected but '}' found.
+}
+^
+
+
+scala> object Solution {
+     | 
+     | 
+You typed two blank lines.  Starting a new command.
+
+scala>     def pascalTriangle(levels:Int):Unit={      
+     | 
+     | 
+You typed two blank lines.  Starting a new command.
+
+scala>         def factorial(n:Int):Int = {
+     | 
+     |             n match {
+     | 
+     |                 case 1 => 1
+     | 
+     |                 case k => k * factorial(k-1)
+     | 
+     |             }
+     | 
+     |         }
+factorial: (n: Int)Int
+
+scala>         
+     | 
+     |         // The value at nthrow and rth column of the triangle is equal to n! / (r! * (n-r)!)
+
+scala>         for (row <- 1 to levels)
+     | 
+     |             for (col <- 1 to row)
+     | 
+     |                 println(factorial(row)/(factorial(col)*factorial(row-col)))
+<console>:12: error: not found: value levels
+               for (row <- 1 to levels)
+                                ^
+
+scala>             println("\n")
+
+
+
+scala>     }
+<console>:1: error: eof expected but '}' found.
+    }
+    ^
+
+scala>     def main(args: Array[String]) {
+     | 
+     |         pascalTriangle(5)
+     | 
+     |     }
+<console>:12: error: not found: value pascalTriangle
+               pascalTriangle(5)
+               ^
+
+scala> }
+<console>:1: error: eof expected but '}' found.
+}
+^
+
+
+Welcome to Scala version 2.11.7 (Java HotSpot(TM) 64-Bit Server VM, Java 1.7.0_80).
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala> object Solution {
